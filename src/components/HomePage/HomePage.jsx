@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 
 const HomePage = () => {
   return (
-    <Paper>
+    <Paper sx={{ p: 0, margin: 0.5 }}>
       <ButtonAppBar />
       <Grid container rowSpacing={5} columnSpacing={{ xs: 1, sm: 2, md: 9 }}>
         <Grid item xs={3}>

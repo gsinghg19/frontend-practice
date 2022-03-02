@@ -1,21 +1,33 @@
 import * as React from "react";
 import Paper from "@mui/material/Paper";
 import ButtonAppBar from "../HomePage/ButtonAppBar";
+import Box from "@mui/material/Box";
 
 const WatchListPage = () => {
   return (
     <>
       <ButtonAppBar />
-      <Paper>
-        <div>
-          <h1>Watchlist Page</h1>
-        </div>
-        <div>
-          <body>
-            A place for users to keep a track of movies they are interested in.
-          </body>
-        </div>
-      </Paper>
+      <Box>
+        <Paper
+          sx={{
+            p: 1,
+            margin: 3,
+            maxWidth: "100%",
+            minHeight: "100%",
+            flexgrow: 1,
+          }}
+        >
+          <div>
+            <h1>Watchlist Page</h1>
+          </div>
+          <div>
+            <body>
+              A place for users to keep a track of movies they are interested
+              in.
+            </body>
+          </div>
+        </Paper>
+      </Box>
     </>
   );
 };
