@@ -32,14 +32,14 @@ function Copyright(props) {
   );
 }
 
-const theme = createTheme();
-
 export default function signUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
     console.log({
+      FirstName: data.get("FirstName"),
+      LastName: data.get("LastName"),
       email: data.get("email"),
       password: data.get("password"),
     });
@@ -48,11 +48,80 @@ export default function signUp() {
   return (
     <Paper>
       <ButtonAppBar />
-      <Grid>
-        <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-          <LockOutlinedIcon />
-        </Avatar>
+
+      <Grid container component="main" sx={{ height: "100vh" }}>
+        <CssBaseline />
+
+        <Grid item xs={50} sm={20} md={20} elevation={18} square>
+          <Box
+            sx={{
+              my: 6,
+              mx: 4,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Avatar sx={{ m: 3, bgcolor: "secondary.main" }}>
+              <LockOutlinedIcon />
+            </Avatar>
+            <Typography component="h1" variant="h5">
+              Create Account
+            </Typography>
+            <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="First name"
+                label="First name"
+                name="First name"
+                autocomplete="First name"
+                autoFocus
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="Last name"
+                label="Last name"
+                name="Last name"
+                autocomplete="Last name"
+                autoFocus
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="email"
+                label="Email address"
+                name="email"
+                autocomplete="email"
+                autoFocus
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+              />
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3 }}
+              >
+                Create Account
+              </Button>
+            </Box>
+          </Box>
+        </Grid>
       </Grid>
+      <Copyright sx={{ mt: 5 }} />
     </Paper>
   );
 }
