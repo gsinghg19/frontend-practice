@@ -17,8 +17,12 @@ export default function ComplexGrid() {
     <Paper sx={{ p: 2, margin: "auto", maxWidth: 500, flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item>
-          <ButtonBase sx={{ width: 128, height: 128 }}>
-            <Img alt="Film Poster" src="/static/images/grid/FilmPoster.jpg" />
+          <ButtonBase sx={{ width: 125, height: 130 }}>
+            <Img
+              alt="Film Poster"
+              src="https://image.shutterstock.com/z/stock-vector-movie-retro-posters-and-flyers-set-vintage-cinema-promotional-printing-collection-can-be-used-for-513802834.jpg"
+              //use real movie images for the images. Store these images locally.
+            />
           </ButtonBase>
         </Grid>
         <Grid item xs={12} sm container>
@@ -28,12 +32,13 @@ export default function ComplexGrid() {
                 Film Title
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Description of film
+                screening credits
               </Typography>
             </Grid>
             <Grid item>
               <Typography sx={{ cursor: "pointer" }} variant="body2">
-                Add expand button here to expand movie description
+                Brief movie description, which is continued when the user clicks
+                on a expand button
               </Typography>
             </Grid>
           </Grid>
