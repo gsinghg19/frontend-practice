@@ -1,4 +1,4 @@
-import ButtonAppBar from "../ButtonAppBar";
+import ButtonAppBar from "../HomePage/ButtonAppBar";
 import ComplexGrid from "./Card_styles";
 import * as React from "react";
 import Paper from "@mui/material/Paper";
@@ -9,6 +9,42 @@ const HomePage = () => {
     <Paper>
       <ButtonAppBar />
       <Grid container rowSpacing={5} columnSpacing={{ xs: 1, sm: 2, md: 9 }}>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
+        <Grid item xs={3}>
+          <ComplexGrid />
+        </Grid>
         <Grid item xs={3}>
           <ComplexGrid />
         </Grid>
