@@ -6,6 +6,7 @@ import DvdsList from "./components/HomePage/HomePage.jsx";
 import SettingsPage from "./components/SettingsPage/Settings";
 import WatchListPage from "./components/Watchlist_page/WatchList_page.jsx";
 import ProfilePage from "./components/Profile_Page/Profile_Page.jsx";
+import SignupPage from "./components/Forms/Signup.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/watchlist" element={<WatchListPage />} />
           <Route path="/Profile" element={<ProfilePage />} />
+          <Route path="/signUp" element={<SignupPage />} />
         </Routes>
       </div>
     </BrowserRouter>

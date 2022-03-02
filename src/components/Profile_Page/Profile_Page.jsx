@@ -2,6 +2,7 @@ import * as React from "react";
 import Paper from "@mui/material/Paper";
 import ButtonAppBar from "../HomePage/ButtonAppBar";
 import Box from "@mui/material/Box";
+import AccountCircle from "@mui/icons-material/AccountCircle";
 
 const Profile_Page = () => {
   return (
@@ -19,6 +20,10 @@ const Profile_Page = () => {
         >
           <div>
             <h1>Profile page</h1>
+          </div>
+          <div>
+            <AccountCircle />
+            <body>test</body>
           </div>
         </Paper>
       </Box>
