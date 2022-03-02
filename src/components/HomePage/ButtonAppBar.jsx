@@ -15,14 +15,6 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import users from "../UserLoginPage/UserLoginPage";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-} from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -108,16 +100,15 @@ export default function PrimarySearchAppBar() {
       <MenuItem component="button" onClick={handleMenuClose} href="/users">
         Login
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>Settings</MenuItem>
+      <MenuItem component="button" onClick={handleMenuClose} href="/settings">
+        Settings
+      </MenuItem>
+      <MenuItem component="button" onClick={handleMenuClose} href="/watchlist">
+        My Movie Watchlist
+      </MenuItem>
       <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
     </Menu>
   );
-
-  {
-    /* <NavLink className="nav_text" component="button" to="/users">
-        My Account
-      </NavLink> */
-  }
 
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
@@ -174,7 +165,6 @@ export default function PrimarySearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        {/* place homepage button where this menu button is */}
         <Toolbar>
           <IconButton
             size="large"

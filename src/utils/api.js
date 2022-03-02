@@ -23,3 +23,11 @@ exports.getAllDvds = () => {
       return getAllDvds;
     });
 };
+
+exports.getDvdById = (DVD_id) => {
+  return axios
+    .get(`https://pratice-user-dvd.herokuapp.com/api/dvds/${DVD_id}`)
+    .then(({ data: { getDvdById } }) => {
+      return getDvdById;
+    });
+};
