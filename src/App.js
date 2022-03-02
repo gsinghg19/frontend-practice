@@ -5,6 +5,7 @@ import UserLoginPage from "./components/UserLoginPage/UserLoginPage";
 import DvdsList from "./components/HomePage/HomePage.jsx";
 import SettingsPage from "./components/SettingsPage/Settings";
 import WatchListPage from "./components/Watchlist_page/WatchList_page.jsx";
+import ProfilePage from "./components/Profile_Page/Profile_Page.jsx";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path="/dvds" elements={<DvdsList />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/watchlist" element={<WatchListPage />} />
-          {/* <Route path="/dvds/:dvd_id" element={<DvdsById />} /> */}
+          <Route path="/Profile" element={<ProfilePage />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -100,6 +100,9 @@ export default function PrimarySearchAppBar() {
       <MenuItem component="button" onClick={handleMenuClose} href="/users">
         Login
       </MenuItem>
+      <MenuItem component="button" onClick={handleMenuClose} href="/Profile">
+        My Profile
+      </MenuItem>
       <MenuItem component="button" onClick={handleMenuClose} href="/settings">
         Settings
       </MenuItem>
