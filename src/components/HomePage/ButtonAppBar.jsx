@@ -109,6 +109,9 @@ export default function PrimarySearchAppBar() {
       <MenuItem component="button" onClick={handleMenuClose} href="/watchlist">
         My Movie Watchlist
       </MenuItem>
+      <MenuItem component="button" onClick={handleMenuClose} href="/Contact_us">
+        Contact us
+      </MenuItem>
       <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
     </Menu>
   );

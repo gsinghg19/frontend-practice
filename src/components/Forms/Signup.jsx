@@ -52,7 +52,7 @@ export default function signUp() {
       <Grid container component="main" sx={{ height: "100vh" }}>
         <CssBaseline />
 
-        <Grid item xs={50} sm={20} md={20} elevation={18} square>
+        <Grid item xs={50} sm={20} md={20} elevation={18} square="true">
           <Box
             sx={{
               my: 6,
@@ -76,7 +76,7 @@ export default function signUp() {
                 id="First name"
                 label="First name"
                 name="First name"
-                autocomplete="First name"
+                autoComplete="First name"
                 autoFocus
               />
               <TextField
@@ -86,7 +86,7 @@ export default function signUp() {
                 id="Last name"
                 label="Last name"
                 name="Last name"
-                autocomplete="Last name"
+                autoComplete="Last name"
                 autoFocus
               />
               <TextField
@@ -96,7 +96,7 @@ export default function signUp() {
                 id="email"
                 label="Email address"
                 name="email"
-                autocomplete="email"
+                autoComplete="email"
                 autoFocus
               />
               <TextField

@@ -8,6 +8,7 @@ import WatchListPage from "./components/Watchlist_page/WatchList_page.jsx";
 import ProfilePage from "./components/Profile_Page/Profile_Page.jsx";
 import SignupPage from "./components/Forms/Signup.jsx";
 import Forgotten_Password from "./components/Forms/Forgotten_Password.jsx";
+import Contact_us from "./components/Forms/Contact_us";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Profile" element={<ProfilePage />} />
           <Route path="/signUp" element={<SignupPage />} />
           <Route path="/Forgotten_Password" element={<Forgotten_Password />} />
+          <Route path="/Contact_us" element={<Contact_us />} />
         </Routes>
       </div>
     </BrowserRouter>
