@@ -10,6 +10,7 @@ import SignupPage from "./components/Forms/Signup.jsx";
 import Forgotten_Password from "./components/Forms/Forgotten_Password.jsx";
 import Contact_us from "./components/Forms/Contact_us";
 import TermsAndConditionsPage from "./components/Terms_and_conditions_page/TermsAndConditions.jsx";
+import MessagePage from "./components/MessagePage/MessagePage.jsx";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             path="/termsAndConditions"
             element={<TermsAndConditionsPage />}
           />
+          <Route path="/MessagePage" element={<MessagePage />} />
         </Routes>
       </div>
     </BrowserRouter>

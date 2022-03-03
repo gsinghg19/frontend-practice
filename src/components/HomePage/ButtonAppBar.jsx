@@ -206,6 +206,7 @@ export default function PrimarySearchAppBar() {
               size="large"
               aria-label="show 4 new mails"
               color="inherit"
+              href="/MessagePage"
             >
               <Badge badgeContent={4} color="error">
                 <MailIcon />
