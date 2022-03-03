@@ -9,6 +9,7 @@ import ProfilePage from "./components/Profile_Page/Profile_Page.jsx";
 import SignupPage from "./components/Forms/Signup.jsx";
 import Forgotten_Password from "./components/Forms/Forgotten_Password.jsx";
 import Contact_us from "./components/Forms/Contact_us";
+import TermsAndConditionsPage from "./components/Terms_and_conditions_page/TermsAndConditions.jsx";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
           <Route path="/signUp" element={<SignupPage />} />
           <Route path="/Forgotten_Password" element={<Forgotten_Password />} />
           <Route path="/Contact_us" element={<Contact_us />} />
+          <Route
+            path="/termsAndConditions"
+            element={<TermsAndConditionsPage />}
+          />
         </Routes>
       </div>
     </BrowserRouter>

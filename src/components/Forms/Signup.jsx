@@ -109,6 +109,13 @@ export default function signUp() {
                 id="password"
                 autoComplete="current-password"
               />
+              <FormControlLabel
+                control={
+                  <Checkbox value="terms and conditions" color="primary" />
+                }
+                label="Tick here to accept terms and conditions"
+              />
+              <Link href="/termsAndConditions">Terms and conditions</Link>
               <Button
                 type="submit"
                 fullWidth
