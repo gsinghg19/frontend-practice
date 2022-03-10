@@ -73,7 +73,7 @@ export default function Forgotten_Password() {
       </Box>
       </Grid>
       </Grid>
-      <Copyright sx={{ mt: 3 }} />
+      <Copyright sx={{ mt: 5 }} />
     </Paper>
   );
 }
